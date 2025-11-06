@@ -1,13 +1,16 @@
-// Selecione os elementos das luzes
+// Seleciona os elementos das luzes 
 const luzVermelha = document.getElementById("vermelho");
-const luzAmarela = document.getElementById("amarela");
+const luzAmarela = document.getElementById("amarelo");
 const luzVerde = document.getElementById("verde");
-// Botões
+
+// Botoẽs
+
 const btnVermelho = document.getElementById("btnVermelho");
 const btnAmarelo = document.getElementById("btnAmarelo");
 const btnVerde = document.getElementById("btnVerde");
-const btnAuto = document.getElementById("btnAuto");
+const btnAutomático = document.getElementById("btnAutomático");
 const btnParar = document.getElementById("btnParar");
+
 // Variável para o modo automático
 let intervalo;
 
@@ -19,15 +22,21 @@ function limpar(){
 
 function acenderVermelho(){
     limpar();
-    luzVermelha.classList.add("acesa","vermelha");   
+    luzVermelha.classList.add("acesa","vermelha");
 }
 
 function acenderAmarelo(){
     limpar();
-    luzAmarelo.classList.add("acesa","amarelo");       
+    luzAmarela.classList.add("acesa", "amarela")
 }
 
 function acenderVerde(){
     limpar();
-    luzVerde.classList.add("acesa","verde");       
+    luzVerde.classList.add("acesa","verde")
+}
+
+function modoAutomatico(){
+    limpar();
+    let estado = 0;
+    intervalo = set
 }
